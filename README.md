@@ -17,6 +17,8 @@
 ## Установка и запуск
 
 ```bash
+git clone https://github.com/nightmarovvv/shopping-cart-tests.git
+cd shopping-cart-tests
 python3 -m venv .venv
 source .venv/bin/activate
 pip install pytest pytest-cov ruff
