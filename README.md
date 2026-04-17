@@ -14,13 +14,13 @@
 └── README.md
 ```
 
-## Установка
+## Установка и запуск
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install pytest pytest-cov ruff
 ```
-
-## Запуск
 
 ```bash
 # тесты
@@ -28,6 +28,9 @@ pytest
 
 # тесты + покрытие
 pytest --cov=shopping_cart --cov-report=term-missing
+
+# только smoke
+pytest -m smoke
 
 # линтер
 ruff check .
